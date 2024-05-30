@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istanbul</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+<body>
+    <!--Navbar-->
+    <header class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+                <div class="container">
+                  <img src="img/istanbul_icon.png" alt="Istanbul" class="img-fluid logo pt-0">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-5">
+                      <li class="nav-item me-3">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item me-3">
+                        <a class="nav-link" href="#">About Us</a>
+                      </li>
+                      <li class="nav-item dropdown me-3 rounded-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Trips
+                        </a>
+                        <ul class="dropdown-menu rounded-3" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Istanbul</a></li>
+                          <li><a class="dropdown-item" href="#">Ankara</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Trabzon</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item me-3">
+                        <a class="nav-link" href="#">Contact Us</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-info" type="submit">Search</button>
+                      <button class="btn btn-outline-info ms-2" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title text-secondary" id="staticBackdropLabel">LOGIN</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Email address</label>
+                      <input type="email" class="form-control" id="user-email">
+                      <p class="ms-2 mt-2">We will never share your email with any one else .</p>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Password:</label>
+                      <input type="password" class="form-control" id="user-password">
+                    </div>
+                    <div class="form-check form-switch mb-3 mt-4">
+                        <input class="form-check-input" type="checkbox" id="mySwitch" name="rememberMe" value="yes">
+                        <label class="form-check-label" for="mySwitch">Remember Me</label>
+                      </div>
+                  </form>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+            <button type="button" class="btn btn-info">Login</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+        <!--Slider-->
+        <div class="container-fluid mt-5 mb-5 slider-carousel">
+            <div class="row">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/Kiz Kulesi.jpeg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-md-block pb-5">
+                          <h5>Istanbul</h5>
+                          <p>Stay at the best luxry hotels .</p>
+                          <button type="button" class="btn btn-light">Contact Us</button>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/posfor.jpeg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption  d-md-block pb-5">
+                          <h5>Istanbul</h5>
+                          <p>Stay at the best luxry hotels .</p>
+                          <button type="button" class="btn btn-light">Contact Us</button>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/Istanbul Bosphorus bridge.jpeg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption  d-md-block pb-5">
+                          <h5>Istanbul</h5>
+                          <p>Stay at the best luxry hotels .</p>
+                          <button type="button" class="btn btn-light">Contact Us</button>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            
+        </div>
+    </div>
+
+    <!--Side bar-->
+    <div class="fixed-side-section d-flex flex-column align-items-center">
+        <a href="https://www.facebook.com" target="_blank" class="icon facebook rounded-circle nav-link">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" class="icon twitter rounded-circle nav-link">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="icon instagram rounded-circle nav-link">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" class="icon linkedin rounded-circle nav-link">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </div>
+
+    <!--section 1-->
+    <section class="wellcome container-fluid  rounded-4 pt-4 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="text-light">
+                    <h1>WELLCOME</h1>
+                    <p class="lead">Are you planning to visit Istanbul ?? We offer the ultimate tour in Istanbul, covering Istanbul and its villages. Frome one day to 10 day dream vagation, we 
+                        will care of all your needs and hotels. 24/7 Customer service .
+                    </p>
+                    <button type="button" class="btn btn-primary rounded-2 border-light"> learn more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="div-line mt-3 mb-3 border border-muted"></div>
+
+    <!--section 2-->
+    <section class="wellcome container-fluid rounded-4 pt-4 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="text-light">
+                    <h1 class="text-center">Popular destinations in Istanbul</h1>
+                    
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!--Accordion section-->
+    <section class="container-fluid">
+        <div class="">
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button collapsed text-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                SABANCA
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                            , though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed text-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                MAŞAUKIA
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                              , though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item border">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed text-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                BELEGRAD
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body bg-light">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+                              , though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!--Translaite 1-->
+    <section class="translate rounded-4 pt-4 pb-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-light text-center">Translate From Arabic To English</h1>
+                    <p class="text-light form-label h5 mt-4" for="exampleFormControlTextarea1">Write and Translate . <span class="text-primary h6"> Press Here</span></p>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-outline-info bg-light mb-3 mt-4" data-bs-toggle="popover" title="Text copied"><a href="#" data-bs-toggle="modal" data-bs-target="#myModal1" class="text-info">Copy</a></button>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="div-line mt-3 mb-3 border border-muted"></div>
+
+    <!--Translaite 2-->
+    <section class="translate rounded-4 pt-4 pb-4 mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-light text-center">Translate From Arabic To Turkish</h1>
+                    <p class="text-light form-label h5" for="exampleFormControlTextarea1">Write and Translate . <span class="text-primary h6"> Press Here</span></p>
+                    <div class="mb-3">
+                        <button type="button" class="btn btn-outline-info bg-light mb-3 mt-4" data-bs-toggle="popover" title="Text copied"><a href="#" data-bs-toggle="modal" data-bs-target="#myModal1" class="text-info">Copy</a></button>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal1">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body">
+            <p class="text-primary">Your text has been copied ...</p>
+            </div>
+    
+            <!-- Modal footer -->
+            <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">ok</button>
+            </div>
+    
+        </div>
+        </div>
+    </div>
+
+    <!--fixed image-->
+    <section class="fixed-img">
+        <div class="fild"></div>
+    </section>
+
+
+    <!--Section cards-->
+    <section class="s-cards mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 col-row">
+                    <div class="card mx-auto mt-4" style="width: 20rem;">
+                        <div style="height: 350px;">
+                            <img src="img/Istanbul1.jpeg" class="card-img-top img-fluid img-thumbnail rounded-2 p-2 img-card" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Contact Us</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary d-block">See more...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card mx-auto mt-4" style="width: 20rem;">
+                        <div style="height: 350px;">
+                            <img src="img/galata.jpeg" class="card-img-top img-fluid img-thumbnail rounded-2 p-2 img-card" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Contact Us</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary d-block">See more...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card mx-auto mt-4" style="width: 20rem;">
+                        <div style="height: 350px;">
+                            <img src="img/Lifespire.jpeg" class="card-img-top img-fluid img-thumbnail rounded-2 p-2 img-card" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Contact Us</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary d-block">See more...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card mx-auto mt-4" style="width: 20rem;">
+                        <div style="height: 350px;">
+                            <img src="img/Apple tea.jpeg" class="card-img-top img-fluid img-thumbnail rounded-2 p-2 img-card" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Contact Us</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary d-block">See more...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card mx-auto mt-4" style="width: 20rem;">
+                        <div style="height: 350px;">
+                            <img src="img/from Istanbul.jpeg" class="card-img-top img-fluid img-thumbnail rounded-2 p-2 img-card" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Contact Us</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary d-block">See more...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card mx-auto mt-4" style="width: 20rem;">
+                        <div style="height: 350px;">
+                            <img src="img/cami.jpeg" class="card-img-top img-fluid img-thumbnail rounded-2 p-2 img-card" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Contact Us</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary d-block">See more...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 ">
+                    <div class="card mx-auto mt-4" style="width: 20rem;">
+                        <div style="height: 350px;">
+                            <img src="img/Kiz Kulesi.jpeg" class="card-img-top img-fluid img-thumbnail rounded-2 p-2 img-card" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Contact Us</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary d-block">See more...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 ">
+                    <div class="card mx-auto mt-4" style="width: 20rem;">
+                        <div style="height: 350px;">
+                            <img src="img/Istanbul Bosphorus bridge.jpeg" class="card-img-top img-fluid img-thumbnail rounded-2 p-2 img-card" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Contact Us</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary d-block">See more...</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--fixed image-->
+    <section class="fixed-img">
+        <div class="fild"></div>
+    </section>
+
+    <!--Images cards-->
+    <section class="imgs-cards mt-5 mb-5">
+        <div class="container">
+            <h2 class="text-center mt-5 mb-5">Take a Look to The Beauty</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card mx-auto mt-4" style="width: 22rem;">
+                        <div style="height: 430px;" class="card-2">
+                            <img src="img/cami.jpeg" class="card-img-top img-fluid img-thumbnail rounded-3 p-2 img-card" alt="...">
+                            <h5 class="img-h5 text-light">Off to Istanbul</h5>
+                            <img src="img/download.jpeg" alt="" class="img-img img-fluid rounded-circle">
+                            <p class="img-p1 text-light">contact us</p>
+                            <p class="img-p2 text-light">for more details</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card mx-auto mt-4" style="width: 22rem;">
+                        <div style="height: 430px;" class="card-2">
+                            <img src="img/galata.jpeg" class="card-img-top img-fluid img-thumbnail rounded-3 p-2 img-card" alt="...">
+                            <h5 class="img-h5 text-light">Off to Istanbul</h5>
+                            <img src="img/Galata Tower.jpeg" alt="" class="img-img img-fluid rounded-circle">
+                            <p class="img-p1 text-light">contact us</p>
+                            <p class="img-p2 text-light">for more details</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="card mx-auto mt-4" style="width: 22rem;">
+                        <div style="height: 430px;" class="card-2">
+                            <img src="img/Apple tea.jpeg" class="card-img-top img-fluid img-thumbnail rounded-3 p-2 img-card" alt="...">
+                            <h5 class="img-h5 text-light">Off to Istanbul</h5>
+                            <img src="img/turkish tea.jpeg" alt="" class="img-img img-fluid rounded-circle">
+                            <p class="img-p1 text-light">contact us</p>
+                            <p class="img-p2 text-light">for more details</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="div-line mt-3 mb-3 border border-muted"></div>
+    
+    <!--Section News-->
+    <section class="news mt-5 mb-5">
+        <div class="container">
+            <h1 class="text-center ">ISTANBUL NEWS</h1>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 mt-5">
+                    <div class="div-news mx-auto row mb-3">
+                        <div class="col-lg-4 col-md-12 col-12 img-news ps-0 pe-0 pb-4 d-lg-none"><img src="img/Apple tea.jpeg" alt="" class="img-fluid skew-image "></div>
+                        <div class="col-lg-8 col-md-12 col-12 mt-5 ps-4 mb-0 pb-4">
+                            <h2>Podcast Title</h2>
+                            <p> <i class="fa-regular fa-calendar-days"></i> Mon, May 23rd 2024</p>
+                            <div class="div-title mb-4" style="width: 10px; height: 6px;"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officiis sit deserunt perspiciatis omnis expedita corrupti veniam placeat temporibus, corporis, minima exercitationem vero ex molestiae voluptate. Repellat quidem deserunt saepe.
+                            Lorem ipsum dolor sit amet consectetur
+                            </p>
+                            <div class="d-flex mt-5 ">
+                                <button class="btn btn-outline-success" type="button"> <i class="fa-solid fa-podcast"></i> Podcast</button>
+                                <button class="btn btn-outline-success ms-2" type="button"> <i class="fa-solid fa-clock"></i> 55 mins.</button>
+                                <button class="btn btn-outline-success ms-2" type="button"> <i class="fa-solid fa-play"></i> Play episode</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-12 img-news ps-0 pe-0 pb-4 d-none d-lg-block d-xl-block"><img src="img/Apple tea.jpeg" alt="" class="img-fluid skew-image "></div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 mt-5">
+                    <div class="div-news mx-auto row mb-3">
+                        <div class="col-lg-4 col-md-12 col-12 img-news img-news2 ps-0 pe-0 mb-0 pb-4"><img src="img/galata.jpeg" alt="" class="img-fluid skew-image skew-image2 "></div>
+                        <div class="col-lg-8 col-md-12 col-12 mt-5 ps-4 mb-0 pb-4">
+                            <h2>Podcast Title</h2>
+                            <p> <i class="fa-regular fa-calendar-days"></i> Mon, May 23rd 2024</p>
+                            <div class="div-title mb-4" style="width: 10px; height: 6px;"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officiis sit deserunt perspiciatis omnis expedita corrupti veniam placeat temporibus, corporis, minima exercitationem vero ex molestiae voluptate. Repellat quidem deserunt saepe.
+                            Lorem ipsum dolor sit amet consectetur
+                            </p>
+                            <div class="d-flex mt-5">
+                                <button class="btn btn-outline-success" type="button"> <i class="fa-solid fa-podcast"></i> Podcast</button>
+                                <button class="btn btn-outline-success ms-2" type="button"> <i class="fa-solid fa-clock"></i> 55 mins.</button>
+                                <button class="btn btn-outline-success ms-2" type="button"> <i class="fa-solid fa-play"></i> Play episode</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12 mt-5">
+                    <div class="div-news mx-auto row mb-3">
+                        <div class="col-lg-4 col-md-12 col-12 img-news ps-0 pe-0 pb-4 d-lg-none"><img src="img/from Istanbul.jpeg" alt="" class="img-fluid skew-image "></div>
+                        <div class="col-lg-8 col-md-12 col-12 mt-5 ps-4 mb-0 pb-4">
+                            <h2>Podcast Title</h2>
+                            <p> <i class="fa-regular fa-calendar-days"></i> Mon, May 23rd 2024</p>
+                            <div class="div-title mb-4" style="width: 10px; height: 6px;"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officiis sit deserunt perspiciatis omnis expedita corrupti veniam placeat temporibus, corporis, minima exercitationem vero ex molestiae voluptate. Repellat quidem deserunt saepe.
+                            Lorem ipsum dolor sit amet consectetur
+                            </p>
+                            <div class="d-flex mt-5">
+                                <button class="btn btn-outline-success" type="button"> <i class="fa-solid fa-podcast"></i> Podcast</button>
+                                <button class="btn btn-outline-success ms-2" type="button"> <i class="fa-solid fa-clock"></i> 55 mins.</button>
+                                <button class="btn btn-outline-success ms-2" type="button"> <i class="fa-solid fa-play"></i> Play episode</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-12 img-news ps-0 pe-0 mb-0 pb-4 d-none d-lg-block d-xl-block"><img src="img/from Istanbul.jpeg" alt="" class="img-fluid skew-image "></div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12 mt-5">
+                    <div class="div-news mx-auto row mb-3">
+                        <div class="col-lg-4 col-md-12 col-12 img-news img-news2 ps-0 pe-0 mb-0 pb-4"><img src="img/Lifespire.jpeg" alt="" class="img-fluid skew-image skew-image2"></div>
+                        <div class="col-lg-8 col-md-12 col-12 mt-5 ps-4 mb-0 pb-4">
+                            <h2>Podcast Title</h2>
+                            <p> <i class="fa-regular fa-calendar-days"></i> Mon, May 23rd 2024</p>
+                            <div class="div-title mb-4" style="width: 10px; height: 6px;"></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt officiis sit deserunt perspiciatis omnis expedita corrupti veniam placeat temporibus, corporis, minima exercitationem vero ex molestiae voluptate. Repellat quidem deserunt saepe.
+                            Lorem ipsum dolor sit amet consectetur 
+                            </p>
+                            <div class="d-flex mt-5">
+                                <button class="btn btn-outline-success" type="button"> <i class="fa-solid fa-podcast"></i> Podcast</button>
+                                <button class="btn btn-outline-success ms-2" type="button"> <i class="fa-solid fa-clock"></i> 55 mins.</button>
+                                <button class="btn btn-outline-success ms-2" type="button"> <i class="fa-solid fa-play"></i> Play episode</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Social media-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="div-link pt-4 pb-4 mb-5 mx-auto">
+                        <h4 class="text-center">Subscribe Now</h4>
+                        <img src="img/twitter.png" alt="" class="img-fluid d-block mx-auto mt-3">
+                        <button class="btn d-block mx-auto mt-3" type="button"> <i class="fa-solid fa-link"></i> Go to link</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="div-link pt-4 pb-4 mb-5 mx-auto">
+                        <h4 class="text-center">Subscribe Now</h4>
+                        <img src="img/whatsapp.png" alt="" class="img-fluid d-block mx-auto mt-3">
+                        <button class="btn d-block mx-auto mt-3" type="button"> <i class="fa-solid fa-link"></i> Go to link</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="div-link pt-4 pb-4 mb-5 mx-auto">
+                        <h4 class="text-center">Subscribe Now</h4>
+                        <img src="img/linkedin.png" alt="" class="img-fluid d-block mx-auto mt-3">
+                        <button class="btn d-block mx-auto mt-3" type="button"> <i class="fa-solid fa-link"></i> Go to link</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="div-link pt-4 pb-4 mb-4 mx-auto">
+                        <h4 class="text-center">Subscribe Now</h4>
+                        <img src="img/instagram.png" alt="" class="img-fluid d-block mx-auto mt-3">
+                        <button class="btn d-block mx-auto mt-3" type="button"> <i class="fa-solid fa-link"></i> Go to link</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-6 col-12 mt-5 mx-auto">
+                    <div class="div-footer mx-auto"></div>
+                    <div><img src="img/logo 1.png" alt="" class="img-fluid"></div>
+                    <div class="div-footer  mb-4 mx-auto"></div>
+                    <p class="p-footer text-center"> Tel : 000-000-000</p>
+                    <p class="p-footer text-center">Address : Turky</p>
+                    <p class="p-footer text-center">Fax : 000-000-000</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mt-5 mx-auto">
+                    <div class="div-footer mx-auto"></div>
+                    <div><img src="img/logo.png" alt="" class="img-fluid mb-1 d-block mx-auto"></div>
+                    <div class="div-footer  mb-4 mx-auto"></div>
+                    <p class="p-footer text-center"> Visit Us</p>
+                    <p class="p-footer text-center">Now More Information</p>
+                    <p class="p-footer text-center">Take a Look</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mt-5 mx-auto">
+                    <div class="div-footer mx-auto"></div>
+                    <div><img src="img/logo 4.png" alt="" class="img-fluid"></div>
+                    <div class="div-footer mb-4 mx-auto"></div>
+                    <p class="p-footer text-center"> Provide Best Services</p>
+                    <p class="p-footer text-center">More About Us</p>
+                    <p class="p-footer text-center">Contact US</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <footer class="mt-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="div-footer2 mx-auto"></div>
+                    <p class="p-footer2 mt-4 mb-4 text-center">COPYRIGHTS &copy; 2024 , KEFAH KANJO</p>
+                    <div class="div-footer2 mx-auto"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+        })
+
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
+
+</body>
+</html>
